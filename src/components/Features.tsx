@@ -94,7 +94,7 @@ const Features = ({ lang }: FeaturesProps) => {
     const t = CONTENT[lang];
     const selectedFeature = t.features.find(f => f.id === selectedId);
 
-    const containerVariants = {
+    const containerVariants: Variants = {
         hidden: { opacity: 0 },
         show: {
             opacity: 1,

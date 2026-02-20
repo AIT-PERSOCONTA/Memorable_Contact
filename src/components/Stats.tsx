@@ -1,6 +1,6 @@
 "use client";
 
-import { motion } from "framer-motion";
+import { motion, Variants } from "framer-motion";
 
 interface StatsProps {
     lang: "en" | "fr";
@@ -95,7 +95,7 @@ const Icon = ({ type }: { type: string }) => {
 const Stats = ({ lang }: StatsProps) => {
     const items = CONTENT[lang];
 
-    const container = {
+    const container: Variants = {
         hidden: { opacity: 0 },
         show: {
             opacity: 1,
@@ -105,7 +105,7 @@ const Stats = ({ lang }: StatsProps) => {
         }
     };
 
-    const itemVariants = {
+    const itemVariants: Variants = {
         hidden: { opacity: 0, scale: 0.8, y: 20 },
         show: { opacity: 1, scale: 1, y: 0, transition: { duration: 0.6, ease: "easeOut" } }
     };
