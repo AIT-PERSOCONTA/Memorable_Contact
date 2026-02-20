@@ -11,7 +11,6 @@ import ExperienceFlow from "@/components/ExperienceFlow";
 import VideoDemo from "@/components/VideoDemo";
 import Testimonials from "@/components/Testimonials";
 import About from "@/components/About";
-import Collective from "@/components/Collective";
 import FadingRecollection from "@/components/FadingRecollection";
 import Pricing from "@/components/Pricing";
 import { useEffect, useState } from "react";
@@ -47,7 +46,6 @@ export default function Home() {
       <VideoDemo lang={lang} />
       <Testimonials lang={lang} />
       <About lang={lang} />
-      <Collective lang={lang} />
       <FadingRecollection lang={lang} />
       <Pricing lang={lang} />
     </main>
